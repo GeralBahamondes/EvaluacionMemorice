@@ -382,19 +382,19 @@ class ComparadorAlgoritmos:
         print("📋 ANÁLISIS DETALLADO DE ALGORITMOS")
         print("="*70)
         print("🚀 ALGORITMO VORAZ (GREEDY):")
-        print("  ✅ Extremadamente rápido y eficiente en memoria")
-        print("  ✅ Estrategia simple y directa")
-        print("  ✅ Sin complejidad computacional")
-        print("  ❌ Puede no encontrar la solución óptima")
-        print("  ❌ No considera consecuencias futuras")
+        print("   Extremadamente rápido y eficiente en memoria")
+        print("   Estrategia simple y directa")
+        print("   Sin complejidad computacional")
+        print("   Puede no encontrar la solución óptima")
+        print("   No considera consecuencias futuras")
         
-        print("\n🧠 ALGORITMO A* (BÚSQUEDA INFORMADA):")
-        print("  ✅ Garantiza encontrar solución óptima (con heurística admisible)")
-        print("  ✅ Usa información heurística para guiar la búsqueda")
-        print("  ✅ Considera múltiples estrategias y consecuencias")
-        print("  ✅ Sistemático y completo")
-        print("  ❌ Más lento y consume más memoria")
-        print("  ❌ Complejidad computacional mayor")
+        print("\n ALGORITMO A* (BÚSQUEDA INFORMADA):")
+        print("   Garantiza encontrar solución óptima (con heurística admisible)")
+        print("   Usa información heurística para guiar la búsqueda")
+        print("   Considera múltiples estrategias y consecuencias")
+        print("   Sistemático y completo")
+        print("   Más lento y consume más memoria")
+        print("   Complejidad computacional mayor")
         
         # Determinar ganadores
         print("\n" + "="*70)
@@ -403,21 +403,21 @@ class ComparadorAlgoritmos:
         
         if resultado_astar:
             if agente_voraz.movimientos <= resultado_astar['estado'].movimientos:
-                print(f"🥇 GANADOR EN EFICIENCIA: VORAZ ({agente_voraz.movimientos} movimientos)")
-                print(f"🥈 A*: {resultado_astar['estado'].movimientos} movimientos")
+                print(f" GANADOR EN EFICIENCIA: VORAZ ({agente_voraz.movimientos} movimientos)")
+                print(f" A*: {resultado_astar['estado'].movimientos} movimientos")
             else:
-                print(f"🥇 GANADOR EN EFICIENCIA: A* ({resultado_astar['estado'].movimientos} movimientos)")  
-                print(f"🥈 VORAZ: {agente_voraz.movimientos} movimientos")
+                print(f" GANADOR EN EFICIENCIA: A* ({resultado_astar['estado'].movimientos} movimientos)")  
+                print(f" VORAZ: {agente_voraz.movimientos} movimientos")
             
             if tiempo_voraz <= tiempo_astar:
-                print(f"⚡ GANADOR EN VELOCIDAD: VORAZ ({tiempo_voraz:.4f} segundos)")
-                print(f"🐌 A*: {tiempo_astar:.4f} segundos")
+                print(f" GANADOR EN VELOCIDAD: VORAZ ({tiempo_voraz:.4f} segundos)")
+                print(f" A*: {tiempo_astar:.4f} segundos")
             else:
-                print(f"⚡ GANADOR EN VELOCIDAD: A* ({tiempo_astar:.4f} segundos)")
-                print(f"🐌 VORAZ: {tiempo_voraz:.4f} segundos")
+                print(f" GANADOR EN VELOCIDAD: A* ({tiempo_astar:.4f} segundos)")
+                print(f" VORAZ: {tiempo_voraz:.4f} segundos")
                 
             # Análisis de trade-off
-            print(f"\n💡 TRADE-OFF ANÁLISIS:")
+            print(f"\n TRADE-OFF ANÁLISIS:")
             factor_tiempo = tiempo_astar / tiempo_voraz if tiempo_voraz > 0 else float('inf')
             diferencia_movimientos = abs(agente_voraz.movimientos - resultado_astar['estado'].movimientos)
             
@@ -425,11 +425,11 @@ class ComparadorAlgoritmos:
             print(f"   • Diferencia en movimientos: {diferencia_movimientos}")
             
             if diferencia_movimientos <= 2 and factor_tiempo > 100:
-                print(f"   🎯 RECOMENDACIÓN: Usar VORAZ (diferencia mínima, mucho más rápido)")
+                print(f"    RECOMENDACIÓN: Usar VORAZ (diferencia mínima, mucho más rápido)")
             elif diferencia_movimientos > 5:
-                print(f"   🎯 RECOMENDACIÓN: Usar A* (mejora significativa en eficiencia)")
+                print(f"    RECOMENDACIÓN: Usar A* (mejora significativa en eficiencia)")
             else:
-                print(f"   🎯 RECOMENDACIÓN: Depende del contexto (velocidad vs precisión)")
+                print(f"    RECOMENDACIÓN: Depende del contexto (velocidad vs precisión)")
         
         return {
             'voraz': {
@@ -458,4 +458,5 @@ if __name__ == "__main__":
     
     print("\n" + "="*70)
     print("EJECUCIÓN COMPLETADA - ANÁLISIS FINALIZADO")
+
     print("="*70)
