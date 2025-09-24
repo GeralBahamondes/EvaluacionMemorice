@@ -1,5 +1,11 @@
 # Juego de Memoria - Comparación de Algoritmos de Búsqueda
 
+# Integrantes :
+Milhar Leiva
+Geral Bahamondes
+Rodrigo Garcés
+Julian Pino
+
 ## Descripción del Proyecto
 
 Este proyecto implementa y compara dos algoritmos diferentes para resolver un juego de memoria (6x6 cartas, 18 pares únicos):
