@@ -10,7 +10,7 @@ El objetivo es que el agente memorice las cartas vistas y empareje todas las par
 
 
 
-##  Requisitos cumplidos
+# Requisitos cumplidos
 
 - **Memorización:** el agente recuerda las cartas que se han volteado.  
 - **Algoritmo de búsqueda:** se implementa un algoritmo de búsqueda (informada) para decidir los movimientos.  
@@ -22,7 +22,7 @@ El objetivo es que el agente memorice las cartas vistas y empareje todas las par
 Requisitos:  
 - Python 3.8 o superior  
 
-##Ejecutar en la terminal:  
+# Ejecutar en la terminal:  
 
 bash
 python agenteMemorice.py
@@ -32,21 +32,20 @@ Número de movimientos realizados (cada movimiento = voltear 2 cartas).
 
 Tiempo total de resolución del tablero.
 
-##Algoritmo implementado
-  El agente utiliza un enfoque informado basado en memoria:
+# Algoritmo implementado
+El agente utiliza un enfoque informado basado en memoria:
 
-  Cada vez que voltea una carta, almacena en memoria su valor y posición.
+Cada vez que voltea una carta, almacena en memoria su valor y posición.
 
-  Si encuentra una carta cuyo par ya estaba en memoria, las empareja inmediatamente.
+Si encuentra una carta cuyo par ya estaba en memoria, las empareja inmediatamente.
 
-  Si no conoce la pareja, voltea una nueva carta para seguir recolectando información.
+Si no conoce la pareja, voltea una nueva carta para seguir recolectando información.
 
-  Repite hasta emparejar todas las cartas del tablero.
+Repite hasta emparejar todas las cartas del tablero.
 
-  Este comportamiento se considera búsqueda informada, porque el agente utiliza la información acumulada para reducir la cantidad de movimientos necesarios.
+Este comportamiento se considera búsqueda informada, porque el agente utiliza la información acumulada para reducir la cantidad de movimientos necesarios.
 
-##Pruebas
-  El agente fue probado en múltiples ejecuciones con tableros aleatorios.
-  En cada corrida se registró
+# Pruebas
+El agente fue probado en múltiples ejecuciones con tableros aleatorios.
 
 
